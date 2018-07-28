@@ -52,7 +52,7 @@ Log the user on (can use the "su" command if you are logging as root)
 ```
 <img src="docs/vnc-passwd.png" />
 
-- Configure the VNC connection. This command below is run by roor
+- Configure the VNC connection. This command below is run by <b>root</b>
 
 ```
 cp /lib/systemd/system/vncserver@.service  /etc/systemd/system/vncserver@:1.service
@@ -99,7 +99,7 @@ Alternatively for the commands above is to log on as the user with VNC user avai
 	ssh user@centos-ip -L 5901:localhost:5901 
 ```
 
-Enter the password (if you want to user SSH key, you can use "-i" parameter to provide the private key file
+Enter the password (if you want to use SSH key, you can use "-i" parameter to provide the private key file
 
 <img src="docs/ssh-tunnel.png" />
 
@@ -109,12 +109,12 @@ Keep the command window running (do'nt close it becuase it is responsible for th
 
 <img src="docs/vnc-viewer.png" />
 
-Instead of connecting to the port 5901 on the remote Centos server (which is unsecure), you now can connect to the port 5901 on local machine
+Instead of connecting to the port 5901 on the remote Centos server (which is unsecure), you now can connect to the port 5901 on local machine. which is then forwarded to the port 5901 on the remote Centos server thru the tunnel on the port 22
 
-Key in the password, and congralulation! you are connected!
+Key in the VNC password above, and congratulation! you are connected!
 
 <img src="docs/vnc-logged.png"/>
 
-If the screen resolution is not good as above, which is becuase of the VNC image quality is low. You can change the option to have better resolution screen (of course it consumes more network bandwidth and a bit slowlier
+If the screen resolution is not good as above, which is becuase of the VNC image quality was set to low. You can change the option to have better resolution screen (of course it consumes more network bandwidth and a bit slowlier)
 
 <img src ="docs/vnc-high-res.png" />
