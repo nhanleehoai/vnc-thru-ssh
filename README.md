@@ -27,7 +27,7 @@ Muilt-user.target is level 3, which means when the server start up it does not r
 
 it takes a while for the server to download all required packages to install. The time it takes depends on the network bandwidth for downloading.  It takes approximately 3 minutes to download on my digitalOcean droplet.
 
-<img src="install-gnome.png" />
+<img src="docs/install-gnome.png" />
 
 - Install VNC server on the Centos server
 
@@ -50,7 +50,7 @@ Log the user on (can use the "su" command if you are logging as root)
 ```
 	vncpasswd
 ```
-<img src="vnc-passwd.png" />
+<img src="docs/vnc-passwd.png" />
 
 - Configure the VNC connection. This command below is run by roor
 
@@ -117,4 +117,4 @@ Key in the password, and congralulation! you are connected!
 
 If the screen resolution is not good as above, which is becuase of the VNC image quality is low. You can change the option to have better resolution screen (of course it consumes more network bandwidth and a bit slowlier
 
-<img src ="vnc-high-res.png" />
+<img src ="docs/vnc-high-res.png" />
